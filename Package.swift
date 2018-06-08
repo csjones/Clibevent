@@ -1,5 +1,10 @@
 import PackageDescription
 
 let package = Package(
-    name: "CLibEvent"
+    name: "Clibevent",
+    pkgConfig: "libevent",
+    providers: [
+        .brew(["libevent"]),
+        .apt(["libevent"])
+    ]
 )
