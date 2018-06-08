@@ -1,4 +1,4 @@
-module CLibEvent [system] {
+module Clibevent [system] {
     header "/usr/include/event.h"
     link "event"
     export *
